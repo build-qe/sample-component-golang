@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi10/go-toolset@sha256:1edf7bd8e7175ec53a5eefb4e0008adfe30cb7b5ad6834ed7eeef1df9f1920dd AS builder
+FROM registry.access.redhat.com/ubi10/go-toolset@sha256:2dcc11f92ee83ef4477fcf92e6ec4d660b69a23a9e4e27c82d5484353d268af7 AS builder
 
 WORKDIR /workspace
 
