@@ -10,7 +10,7 @@ RUN go mod download
 
 RUN CGO_ENABLED=0 go build -o /opt/app-root/sample-component-golang main.go
 
-FROM registry.access.redhat.com/ubi10/ubi-minimal@sha256:a74a7a92d3069bfac09c6882087771fc7db59fa9d8e16f14f4e012fe7288554c
+FROM registry.access.redhat.com/ubi10/ubi-minimal@sha256:145c54e19de7ea25d958b54d981f95762d1a22d17f45fa8f013a5ea07f8ad68c
 
 COPY --from=builder /opt/app-root/sample-component-golang /sample-component-golang
 
